@@ -1,0 +1,15 @@
+@import '../../assets/styles/reset';
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/colors';
+@import '../../assets/fonts/typography';
+@import '../../assets/styles/buttons';
+
+
+@import '../../assets/styles/wrapper';
+@import '../../assets/styles/header';
+@import '../petstory/components/backstage';
+@import '../petstory/components/slider';
+@import '../petstory/components/picking';
+@import '../petstory/components/testimonials';
+@import '../petstory/components/scroll';
+@import '../../assets/styles/footer';

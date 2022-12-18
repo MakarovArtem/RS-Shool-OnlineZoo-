@@ -1,0 +1,236 @@
+.slider {
+  max-width: 1322px;
+  margin: 0 auto;
+
+  .button_long {
+    margin: 0 auto;
+    margin-top: 80px;
+
+    @media screen and (max-width: 1000px) {
+      margin-top: 60px;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.animals-card {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 30px;
+  grid-template: 
+  "left-but one two three right-but"
+  "left-but four five six right-but";
+
+  @media screen and (max-width: 1600px) {
+    row-gap: 15px;
+    grid-template-areas: 
+    "one   one   two      two       four four"
+    ".     .     left-but right-but .    ."
+    "three three five     five      six  six";
+  }
+
+  @media screen and (max-width: 1000px) {
+    row-gap: 15px;
+    grid-template-areas: 
+    "one             two"
+    "left-but  right-but"
+    "three           four";
+  }
+
+  @media screen and (max-width: 640px) {
+    row-gap: 20px;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four";
+    justify-items: center;
+  }
+
+  .card-one {
+    grid-area: one;
+  }
+
+  .card-two {
+    grid-area: two;
+  }
+
+  .card-three {
+    grid-area: three;
+  }
+
+  .card-four {
+    grid-area: four;
+  }
+
+  .card-five {
+    grid-area: five;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .card-six {
+    grid-area: six;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+}
+
+.button {
+
+  &_round {
+
+  }
+
+  &_round_left {
+    grid-area: left-but;
+    align-self: center;
+    margin-right: -10px;
+
+    @media screen and (max-width: 1600px) {
+      justify-self: left;
+      margin-right: -10px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      justify-self: right;
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  &_round_right {
+    grid-area: right-but;
+    align-self: center;
+    margin-left: -10px;
+
+    @media screen and (max-width: 1600px) {
+      justify-self: right;
+      margin-left: -10px;
+    }
+    
+    @media screen and (max-width: 1000px) {
+      justify-self: left;
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  &_long {
+
+  }
+}
+.pet-card {
+  width: 366px;
+  height: 426px;
+  border-radius: 5px;
+  border: 1px solid #FA6F32;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1600px) {
+    width: 294px;
+    height: 354px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 285px;
+    height: 332px;
+  }
+  
+  &__img {
+    
+    img{
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+      height: 366px;
+
+      @media screen and (max-width: 1600px) {
+        height: 294px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        height: 285px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content_herbivore {
+    padding: 8px 12px 13px 16px;
+
+    @media screen and (max-width: 1000px) {
+      padding: 7px 8px 5px 12px;
+    }
+  }
+
+  &__content_predator {
+    padding: 8px 8px 14px 16px;
+
+    @media screen and (max-width: 1000px) {
+      padding: 7px 5px 5px 12px;
+    }
+  }
+
+  &__text {
+
+  }
+
+  &__title {
+    @include body-btn-roboto-medium;
+    text-align: left;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 12px;
+    }
+  }
+
+  &__subtitle {
+    @include small-paragraph-roboto-light;
+    text-align: left;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 12px;
+      line-height: 100%;
+    }
+  }
+
+  &__icon_herbivore {
+    width: 33px;
+    height: 37px;
+    align-self: center;
+
+    @media screen and (max-width: 1000px) {
+      height: 23px;
+      width: 25px;
+    }
+  }
+  
+  &__icon_predator {
+    width: 48px;
+    height: 38px;
+    align-self: center;
+
+    @media screen and (max-width: 1000px) {
+      height: 30px;
+      width: 37px;
+    }
+  }
+}

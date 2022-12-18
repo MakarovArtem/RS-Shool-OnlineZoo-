@@ -1,0 +1,346 @@
+.footer{
+  min-height: 300px;
+  background-color: #111115;
+  padding: 40px 0 50px 0;
+
+  @media screen and (max-width: 1600px) {
+    padding: 40px 30px 50px 30px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 12px 0 12px 0;
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1160px;
+    display: grid;
+    grid-template-columns: 115px auto 400px;
+    grid-template-rows: auto;
+    row-gap: 40px;
+    grid-template-areas: 
+      "footer-logo ... footer-form"
+      "footer-button footer-button footer-button"
+      "footer-socials footer-menu footer-autograph";
+
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 25px;
+      max-width: 600px;
+      grid-template-areas: 
+        "footer-logo footer-socials"
+        "footer-button footer-socials"
+        "footer-menu footer-autograph";
+    }
+
+    @media screen and (max-width: 640px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      row-gap: 15px;
+      align-items: center;
+      max-width: 300px;
+      grid-template-areas: 
+        "footer-logo"
+        "footer-socials"
+        "footer-button"
+        "footer-autograph"
+        "footer-menu";
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 640px) {}
+
+//LOGO START
+.logo_footer {
+  width: 82px;
+  height: 52px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  position: relative;
+  margin-right: 63px;
+  padding: 3.55px 0;
+  grid-area: footer-logo;
+
+  @media screen and (max-width: 640px) {
+    width: 130px;
+    height: 25px;
+    border: none;
+    margin: 0 0 0 0;
+    justify-self: center;
+  }
+
+  p {
+    @include roboto-normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .logo__img {
+    position: absolute;
+    left: 9.5px;
+    top: 24px;
+
+    @media screen and (max-width: 1000px) {
+      width: 20px;
+      height: 35px;
+      left: 6px;
+      top: 15px;
+    }
+
+    @media screen and (max-width: 640px) {
+      left: 70px;
+      top: -7px;
+    }
+  }
+}
+//LOGO END
+
+//FORM START
+.footer__subscription {
+  grid-area: footer-form;
+  justify-self: end;
+  margin: 0.5px;
+
+  @media screen and (max-width: 1600px) {
+    justify-self: start;
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.subscription {
+
+  legend{
+    @include subtitle-roboto-regular;
+    color: #fff;
+    margin: 0 0 14px 0;
+  }
+
+  &__input {
+    width: calc(228px - 1.4px);
+    height: calc(42px - 1.4px);
+    border-radius: 2px;
+    padding: 10px 10px 10px 9px;
+    @include body-roboto-regular;
+    color: #BDBDBD;
+    background-color: #111115;
+    margin: 0.9px;
+  }
+}
+
+.input__container{
+  display: inline-block;
+  width: 228px;
+  height: 42px;
+  border-radius: 2px;
+  background: $color-orange;
+  margin: 0.5px;
+}
+//FORM END
+
+//BUTTON START
+.footer__button{
+  grid-area: footer-button;
+  margin-top: -4px;
+
+  @media screen and (max-width: 1000px) {
+    margin-top: -10px;
+  }
+
+  @media screen and (max-width: 640px) {
+    margin-top: 0;
+  }
+}
+//BUTTON END
+
+//SOCIALS START
+.footer__socials {
+  grid-area: footer-socials;
+  align-self: end;
+  justify-self: start;
+
+  .social_icon-text{
+    margin: 0 0 10px 0;
+
+    @media screen and (max-width: 1000px) {
+      margin: 3px 0 20px 0;
+      padding-right: 25px;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin: 0 0 0 0;
+      padding-right:  27px;
+      padding-left: 27px;
+
+      &:first-child {
+        padding-left: 0px;
+      }
+
+      &:last-child {
+        padding-right: 27px;
+      }
+    }
+  }
+
+  .social_icon-text:last-child{
+    margin: 0 0 0 0;
+  }
+
+  @media screen and (max-width: 1000px) {
+    justify-self: end;
+  }
+
+  @media screen and (max-width: 640px) {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.social {
+
+  &_icon-text {
+    max-width: 111px;
+    height: 26px;
+    position: relative;
+
+
+  }
+
+  &_facebook {
+
+    .social__icon {
+      position: absolute;
+      top: -3px;
+      background: url(/assets/icons/facebook-icon.svg) no-repeat 9px 5px;
+      background-color: rgba(196, 196, 196, 0.5);
+    
+      @media screen and (max-width: 1000px) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  &_twitter {
+
+    .social__icon {
+      position: absolute;
+      top: -3px;
+      background: url(/assets/icons/twitter-icon.svg) no-repeat 6px 5px;
+      background-color: rgba(196, 196, 196, 0.5);
+    }
+  }
+
+  &_instagram {
+
+    .social__icon {
+      position: absolute;
+      top: -3px;
+      background: url(/assets/icons/instagram-icon.svg) no-repeat 5px 5px;
+      background-color: rgba(196, 196, 196, 0.5);
+    }
+  }
+
+  &_youtube {
+
+    .social__icon {
+      position: absolute;
+      top: -3px;
+      background: url(/assets/icons/youtube-icon.svg) no-repeat 4px 6px;
+      background-color: rgba(196, 196, 196, 0.5);
+    }
+  }
+
+  &__icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+  }
+
+  &__text {
+    @include body-roboto-regular;
+    color: #fff;
+    margin:8px 0 1px 38px;
+    
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+}
+//SOCIALS END
+
+//MENU START
+.footer__menu {
+  grid-area: footer-menu;
+  align-self: end;
+  justify-self: end;
+
+  @media screen and (max-width: 640px) {
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.menu_footer {
+  
+  .menu-buttons {
+
+    @media screen and (max-width: 1000px) {
+      display: flex;
+    }
+  }
+}
+
+.menu-list_footer {
+  max-width: 362px;
+  justify-items: space-between;
+
+  @media screen and (max-width: 1600px) {
+    margin-top: -27px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    max-width: 300px;
+    margin-top: 0;
+  }
+}
+//MENU END
+
+//AUTOGRAPH START
+.footer__autograph{
+  grid-area: footer-autograph;
+  justify-self: end;
+  align-self: end;
+}
+
+.autograph{
+  max-width: 230px;
+
+  p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding: 0 0 10px 0;
+
+    @media screen and (max-width: 640px) {
+      font-weight: 100;
+      font-size: 15px;
+    }
+    &:last-child{
+      padding: 0 0 0 0;
+    }
+  }
+}
+//AUTOGRAPH END

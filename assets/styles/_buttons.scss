@@ -1,0 +1,58 @@
+.button {
+  @include body-btn-roboto-medium;
+  line-height: 54px;
+  background: $color-orange;
+  color: #fff;
+  &:hover{
+    background: #E47209;
+    cursor: pointer;
+  }
+  &:active{
+    background: $color-green;
+  }
+  &:disabled{
+    background: $color-gray; 
+  }
+}
+
+.button_long {
+  width: 298px;
+  height: 54px;
+  border-radius: 25px;
+}
+.button_rectangle{
+  width: 298px;
+  height: 54px;
+  border-radius: 5px;
+}
+.button_round{
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  line-height: 62px;
+}
+.button_round_left{
+  position: relative;
+  img{
+    position: absolute;
+    top: 27px;
+    left: 23px;
+  }
+}
+.button_round_right{
+  position: relative;
+  img{
+    position: absolute;
+    top: 27px;
+    left: 23px;
+  }
+}
+.send-button{
+  width: 129px;
+  height: 42px;
+  border: 1px solid $color-green;
+  border-radius: 5px;
+  background-color: $color-light-gray;
+  color: $color-green;
+  @include body-roboto-regular;
+}

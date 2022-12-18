@@ -1,0 +1,227 @@
+.main {
+
+  &__testimonials {
+    padding: 140px 0 180px 0;
+    background: url(/assets/images/leav.png) 100% 126% no-repeat;
+  
+    @media screen and (max-width: 1600px) {
+      padding: 100px 0 140px 0;
+      background: url(/assets/images/leav_small-desktop.png) 100% 116% no-repeat;
+    }
+
+    @media screen and (max-width: 1000px) {
+      padding: 60px 0 0 0;
+      background: url(/assets/images/leav_tablet.png) 100% 115% no-repeat;
+    }
+
+    @media screen and (max-width: 640px) {
+      padding: 30px 0 60px 0;
+      background: url(/assets/images/leav_mobile.png) 100% 106% no-repeat;
+    }
+  }
+}
+
+.testimonials {
+  margin: 0 auto;
+  max-width: 1162px;
+  display: grid;
+  column-gap: 30px;
+  grid-template-areas: 
+    "title title title title"
+    "card-one card-two card-three card-four"
+    "indicator indicator indicator indicator"
+    "button-feed button-feed button-feed button-feed";
+
+  @media screen and (max-width: 1600px) {
+    grid-template-areas: 
+      "title title title"
+      "card-one card-two card-three"
+      "indicator indicator indicator"
+      "button-feed button-feed button-feed";
+    justify-items: center;
+  }
+
+  @media screen and (max-width: 1000px) {
+    max-width: 600px;
+    grid-template-areas: 
+      "title"
+      "card-one"
+      "card-two"
+      "card-three"
+      "button-feed";
+    justify-items: center;
+    row-gap: 15px;
+    column-gap: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    max-width: 300px;
+    max-height: 490px;
+  }
+
+  &__title {
+    grid-area: title;
+    justify-self: center;
+    margin: 0 0 47px 0;
+    @include h3-roboto-regular;
+    color: $color-black-blue;
+
+    @media screen and (max-width: 1600px) {
+      margin: 0 0 30px 0;
+    }
+
+    @media screen and (max-width: 1000px) {
+      margin: 0 0 15px 0;
+    }
+    @media screen and (max-width: 640px) {
+      margin: 0 0 5px 0;
+      font-size: 24px;
+    }
+  }
+}
+
+.feedback-card {
+  padding: 13px 15px 19px 14px;
+  width: 268px;
+  height: 391px;
+  background: $color-light-gray;
+  border-radius: 20px;
+  border: 2px solid rgba(243, 169, 248, 0.66);
+  position: relative;
+
+  @media screen and (max-width: 1600px) {
+    padding: 13px 15px 0 14px;
+    width: 293px;
+    height: 391px;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 600px;
+    height: 110px;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 9px 25px 19px 14px;
+    width: 300px;
+  }
+
+  &:nth-child(2) {
+    grid-area: card-one;
+  }
+
+  &:nth-child(3) {
+    grid-area: card-two;
+  }
+
+  &:nth-child(4) {
+    grid-area: card-three;
+  }
+
+  &:nth-child(5) {
+    grid-area: card-four;
+
+    @media screen and (max-width: 1600px) {
+      display: none;
+    }
+  }
+}
+
+.feedback {
+
+  &__avatar {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+
+    @media screen and (max-width: 640px) {
+      top: 9px;
+      left: 11px;
+    }
+    img{
+      overflow: hidden;
+    }
+  }
+
+  &__info {
+    margin: 0 0 10px 47px;
+
+    @media screen and (max-width: 640px) {
+      margin: 0 0 10px 40px;
+    }
+  }
+
+  &__name {
+    @include body-roboto-regular;
+    line-height: 120%;
+    font-weight: 400;
+  }
+
+  &__location {
+    @include small-paragraph-roboto-light;
+    color: #BDBDBD;
+  }
+
+  &__date {
+    @include small-paragraph-roboto-light;
+    color: #BDBDBD;
+    line-height: 120%;
+    margin: 0 0 10px 5px;
+
+    &::before{
+      content: '·';
+      letter-spacing: 5px;
+      font-weight: 1000;
+    }
+  }
+
+  &__paragraph {
+    overflow: hidden;
+    width: 237px;
+    height: 309px;
+    @include small-paragraph-roboto-light;
+    color: $color-gray;
+
+    @media screen and (max-width: 1000px) {
+      height: 38px;
+      width: 553px;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 250px;
+    }
+  }
+}
+
+.feedback__indicator {
+  grid-area: indicator;
+  justify-self: center;
+  margin: 21px 0 31px 0;
+
+  @media screen and (max-width: 1600px) {
+    margin-top: 20px;
+  }
+}
+
+.testimonials__button {
+  grid-area: button-feed;
+  justify-self: left;
+
+  @media screen and (max-width: 1600px) {
+    margin-top: 21px;
+    margin-left: 30px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 23px;
+  }
+
+  @media screen and (max-width: 640px) {
+    margin-top: 12px;
+  }
+}

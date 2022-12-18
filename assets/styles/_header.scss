@@ -1,0 +1,371 @@
+.header{
+  margin: 0 auto;
+  height: 780px;
+  background-color: #111115;
+  background-image: url(/assets/images/giant_panda.png);
+  background-size: cover;
+
+  @media screen and (max-width: 1600px) {
+    height: 584px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    height: 372px;
+  }
+
+  @media screen and (max-width: 640px) {
+    height: 221px;
+  }
+}
+
+.menu {
+  background-color: #000000;
+  padding: 0 30px;
+
+  &__panel{
+    display: flex;
+    align-items: center;
+    max-width: 1160px;
+    height: 80px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1000px) {
+      height: 34px;
+    }
+  }
+
+  &-buttons {
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    position: relative;
+    z-index: 10;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 0 12px 0 21px;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 0 0px 0 10px;
+  }
+}
+
+.menu.active {
+
+  .menu-buttons {
+    display: block;
+  }
+
+  .copyright {
+    display: block;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 0;
+    background-color: #ffffff;
+    transition: all 0.1s;
+  }
+}
+
+.menu__panel.active {
+  @media screen and (max-width: 1000px) {
+    height: 330px;
+    flex-direction: column;
+    margin: 0;
+    padding: 13px;
+    align-items: start;
+    transition: all 0.5s;
+
+    .logo {
+      width: 67px;
+      height: 42px;
+      border: 1px solid #fe9013;
+      margin: 0 0 30px 0;
+      background: url("/assets/icons/bamboo-orange.svg") no-repeat 4px 15px;
+
+      h1 {
+        font-size: 15px;
+        line-height: 132%;
+        color: #fe9013;
+      }
+
+      &__img {
+        display: none;
+      }
+    }
+    .menu-buttons {
+
+      .menu-list {
+        width: 110px;
+        flex-direction: column;
+
+        &__item {
+          margin: 0 0 15px 0;
+          
+          a {
+            color:#333B41;
+          }
+        }
+      }
+    }
+  }
+}
+
+.burger.active {
+
+  span {
+    background-color: black;
+    transform: scale(0);
+  }
+
+  span:nth-of-type(2) {
+    transform: translateY(4.5px) rotate(45deg);
+  }
+  span:nth-of-type(3) {
+    transform: translateY(-4.5px) rotate(-45deg);
+  }
+}
+
+.burger {
+  display: none;
+
+  @media screen and (max-width: 1000px) {
+    display: block;
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    z-index: 50;
+    // overflow: hidden;
+  
+    span {
+      width: 18px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      border-radius: 2px;
+      background-color: #ffffff;
+      transition: all 0.5s;
+    }
+  
+    span:nth-of-type(2) {
+      top: calc(50% - 5px);
+    }
+
+    span:nth-of-type(3) {
+      top: calc(50% + 5px);
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    right: 10px;
+  }
+}
+
+.logo {
+  width: 82px;
+  height: 52px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  position: relative;
+  margin-right: 63px;
+  padding: 3.55px 0;
+  cursor: default;
+
+  @media screen and (max-width: 1000px) {
+    width: 47px;
+    height: 29px;
+    margin-right: 0;
+    padding: 0;
+    border: none;
+  }
+
+  h1 {
+    @include roboto-normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 12px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 9.5px;
+    top: 24px;
+
+    @media screen and (max-width: 1000px) {
+      left: 3px;
+      top: 10px;
+      font-size: 12px;
+      transform: scale(0.65);
+    }
+  }
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  width: 472px;
+
+  @media screen and (max-width: 1600px) {
+    width: 430px;
+  }
+
+  &__item {
+    
+    a {
+      @include body-roboto-regular;
+      color:#FFFFFF;
+    }
+  }
+
+  &__item_active{
+
+    a{
+      @include body-roboto-regular;
+      background: $color-orange;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.copyright {
+  margin-left: auto;
+  @include body-roboto-regular;
+  color: #fff;
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+    margin-left: 0;
+    color: #333B41;
+  }
+}
+
+.invitation {
+  position: absolute;
+  width: 500px;
+  min-height: 514px;
+  left: calc(50% - 500px/2 + 330px);
+  top: 166px;
+  z-index: 0;
+
+  @media screen and (max-width: 1600px) {
+    width: 400px;
+    min-height: 404px;
+    left: 51.5%;
+    top: 22%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 256px;
+    min-height: 252px;
+    left: 58%;
+    top: 15%;
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 128px;
+    min-height: 103px;
+    left: 56.5%;
+    top: 14%;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 465px;
+    height: 465px;
+    right: calc(21.5%);
+    bottom: calc(24%);
+    border-radius: 50%;
+    background: $color-orange;
+    z-index: 0;
+
+    @media screen and (max-width: 1600px) {
+      width: 367px;
+      height: 367px;
+      right: 23%;
+      bottom: 24%;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 237px;
+      height: 237px;
+      right: 22.5%;
+      bottom: 20.5%;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 119px;
+      height: 119px;
+      right: 21.5%;
+      bottom: 54.5%;
+    }
+  }
+
+  & div:nth-child(2){
+    margin: 60px 0 0 104px;
+
+    @media screen and (max-width: 1600px) {
+      margin: 40px 0 0 50px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      margin: -6px 0 0 -350px;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin: 60px 0 0 -170px;
+    }
+  }
+
+  &__text {
+    @include roboto-normal;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+
+    &_white {
+      position: relative;
+      z-index: 1;
+      color: #FFFFFF;
+    }
+
+    &_yellow {
+      position: relative;
+      z-index: 1;
+      color: $color-yellow;
+    }
+
+    @media screen and (max-width: 1600px) {
+      font-weight: 700;
+      font-size: 85px;
+      line-height: 75%;
+    }
+
+    @media screen and (max-width: 1000px) {
+      font-size: 54px;
+      line-height: 75%;
+    }
+
+    @media screen and (max-width: 640px) {
+      font-size: 28px;
+      line-height: 75%;
+    }
+  }
+}
