@@ -146,15 +146,24 @@ h1, h2, h3, h4, h5, h6 {
 .send-button {
   width: 129px;
   height: 42px;
-  border: 1px solid #4B9200;
   border-radius: 5px;
   background-color: #F1F3F2;
-  color: #4B9200;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+  border: 1px solid #333B41;
+}
+
+.send-button.active {
+  border: 1px solid #4B9200;
+  color: #4B9200;
+}
+
+.send-button.error {
+  border: 1px solid #D31414;
+  color: #D31414;
 }
 
 .wrapper {
@@ -422,6 +431,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 140%;
   color: #fff;
+  cursor: default;
 }
 @media screen and (max-width: 1000px) {
   .copyright {
@@ -824,6 +834,11 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #FA6F32;
   display: flex;
   flex-direction: column;
+}
+.pet-card:hover {
+  box-shadow: 0px 0px 52px -3px rgba(187, 231, 0, 0.2);
+  box-shadow: 0px 0px 52px -22px black;
+  cursor: pointer;
 }
 @media screen and (max-width: 1600px) {
   .pet-card {
@@ -1667,6 +1682,22 @@ input[type=range]::-moz-range-thumb {
   color: #BDBDBD;
   background-color: #111115;
   margin: 0.9px;
+}
+
+.subscription__input:focus {
+  color: #4B9200;
+}
+
+.input__container.active {
+  background: #4B9200;
+}
+
+.subscription__input.error {
+  color: #D31414;
+}
+
+.input__container.error {
+  background: #D31414;
 }
 
 .input__container {

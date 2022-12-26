@@ -246,6 +246,7 @@
   margin-left: auto;
   @include body-roboto-regular;
   color: #fff;
+  cursor: default;
 
   @media screen and (max-width: 1000px) {
     display: none;

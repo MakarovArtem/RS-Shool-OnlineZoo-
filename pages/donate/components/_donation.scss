@@ -1,0 +1,108 @@
+.main {
+
+  &__picking {
+  }
+}
+.picking {
+
+  &__info {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__demo {
+  }
+
+  &__donation {
+  }
+
+  &__option {
+  }
+
+  &__enter {
+  }
+}
+.demonstration {
+  max-width: 530px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: 
+    "num icon"
+    "text icon";
+  margin: 0 auto;
+  align-items: center;
+  row-gap: 10px;
+  column-gap:90px;
+
+  &__number {
+    @include body-roboto-regular;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+
+    align-self: end;
+    grid-area: num;
+
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 50%;
+      left: 105%;
+      background: url("../../../assets/icons/x_icon.png") no-repeat;
+    }
+  }
+
+  &__text {
+    @include body-roboto-regular;
+    text-align: center;
+    color: #333B41;
+
+    align-self: start;
+    grid-area: text;
+  }
+
+  &__icon {
+    width: 284px;
+    justify-self: center;
+    align-self: end;
+    grid-area: icon;
+  }
+}
+.option-bar {
+
+  &__name {
+  }
+
+  &__bar {
+  }
+
+  &__amount {
+  }
+}
+.enter {
+
+  &__field {
+  }
+
+  &__option {
+  }
+
+  &__button {
+  }
+}
+.button {
+
+  &_long {
+  }
+}

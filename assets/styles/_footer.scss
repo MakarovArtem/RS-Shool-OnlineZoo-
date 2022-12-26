@@ -50,9 +50,6 @@
   }
 }
 
-@media screen and (max-width: 1000px) {}
-@media screen and (max-width: 640px) {}
-
 //LOGO START
 .logo_footer {
   width: 82px;
@@ -136,6 +133,22 @@
   }
 }
 
+.subscription__input:focus {
+  color: #4B9200;
+}
+
+.input__container.active {
+  background: #4B9200;
+}
+
+.subscription__input.error {
+  color: #D31414;
+}
+
+.input__container.error {
+  background: #D31414;
+}
+
 .input__container{
   display: inline-block;
   width: 228px;
@@ -144,6 +157,8 @@
   background: $color-orange;
   margin: 0.5px;
 }
+
+
 //FORM END
 
 //BUTTON START
