@@ -58,10 +58,24 @@
                 </div>
               </div>
               <div class="picking__enter">
-                <div class="enter__field"></div>
-                <div class="enter__option"></div>
-                <div class="enter__option"></div>
-                <div class="enter__button button button_long"></div>
+                <form class="enter__container" action="#">
+                  <fieldset class="enter">
+                    <div class="enter__field">
+                      <input class="enter__input" type="text" name="another-amount" placeholder="Another amount">
+                    </div>
+                    <div class="enter__options">
+                      <div class="enter__option">
+                        <input type="radio" class="custom-radio" id="option-monthly" name="cyclicity" value="monthly">
+                        <label for="option-monthly">Monthly</label>
+                      </div>
+                      <div class="enter__option">
+                        <input type="radio" class="custom-radio" id="option-once" name="cyclicity" value="once">
+                        <label for="option-once">Once</label>
+                      </div>
+                    </div>
+                    <button class="enter__button button button_long" type="submit">Feed a friend now</button>
+                  </fieldset>
+                </form>
               </div>
             </div>
           </div>

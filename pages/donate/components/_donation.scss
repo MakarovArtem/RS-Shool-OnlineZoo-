@@ -90,19 +90,103 @@
   &__amount {
   }
 }
+.enter__container {
+  display: flex;
+  justify-content: center;
+}
+
 .enter {
+  width: 268px;
+  display: grid;
+  grid-template-areas: 
+    "input"
+    "options"
+    "button";
+  justify-items: center;
+  row-gap: 30px;
 
   &__field {
+    width: 268px;
+    height: 54px;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    position: relative;
+    grid-area: input;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 20px;
+      right: 9px;
+      top: calc(50% - 10px);
+      background-image: url(../../../assets/icons/dollar-icon.png);
+      background-repeat: no-repeat;
+    }
+
+    input {
+      @include body-roboto-regular;
+      color: #929699;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      padding: 9px;
+    }
   }
 
-  &__option {
+  &__field.active{
+
+    &::before {
+      display: none;
+    }
   }
 
   &__button {
+    grid-area: button;
   }
 }
-.button {
 
-  &_long {
+.enter {
+
+  &__options {
+    display: flex;
+    // justify-content: center;
+    gap: 50px;
+    grid-area: options;
+  }
+
+  &__option {
+
+  }
+}
+
+.custom-radio {
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+  width: 0;
+
+  &+label {
+    display: inline-flex;
+    align-items: center;
+    @include body-roboto-regular;
+    line-height: 100%;
+    color: #333B41;
+  }
+
+  &+label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #F9804B;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &:checked+label:before {
+    border: 1px solid $color-green;
+    background-color: $color-green;
+    transition: 0.5s ease;
   }
 }
