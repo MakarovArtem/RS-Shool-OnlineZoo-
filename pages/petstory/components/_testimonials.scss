@@ -2,21 +2,21 @@
 
   &__testimonials {
     padding: 140px 0 180px 0;
-    background: url("../../../assets/images/leav.png") 100% 126% no-repeat;
+    background: url("../../assets/images/leav.png") 100% 126% no-repeat;
   
     @media screen and (max-width: 1600px) {
       padding: 100px 0 140px 0;
-      background: url("../../../assets/images/leav_small-desktop.png") 100% 116% no-repeat;
+      background: url("../../assets/images/leav_small-desktop.png") 100% 116% no-repeat;
     }
 
     @media screen and (max-width: 1000px) {
       padding: 60px 0 0 0;
-      background: url("../../../assets/images/leav_tablet.png") 100% 115% no-repeat;
-    }
+      background: url("../../assets/images/leav_tablet.png") 100% 115% no-repeat;
+  
 
     @media screen and (max-width: 640px) {
       padding: 30px 0 60px 0;
-      background: url("../../../assets/images/leav_mobile.png") 100% 106% no-repeat;
+      background: url("../../assets/images/leav_mobile.png") 100% 106% no-repeat;
     }
   }
 }
@@ -224,4 +224,4 @@
   @media screen and (max-width: 640px) {
     margin-top: 12px;
   }
-}
+}}

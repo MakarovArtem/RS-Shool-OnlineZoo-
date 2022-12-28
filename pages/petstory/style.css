@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   height: 780px;
   background-color: #111115;
-  background-image: url("../../assets/images/giant_panda.png");
+  background-image: url("/assets/images/giant_panda.png");
   background-size: cover;
 }
 @media screen and (max-width: 1600px) {
@@ -1250,28 +1250,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .main__testimonials {
   padding: 140px 0 180px 0;
-  background: url("../../../assets/images/leav.png") 100% 126% no-repeat;
+  background: url("../../assets/images/leav.png") 100% 126% no-repeat;
 }
 @media screen and (max-width: 1600px) {
   .main__testimonials {
     padding: 100px 0 140px 0;
-    background: url("../../../assets/images/leav_small-desktop.png") 100% 116% no-repeat;
+    background: url("../../assets/images/leav_small-desktop.png") 100% 116% no-repeat;
   }
 }
 @media screen and (max-width: 1000px) {
   .main__testimonials {
     padding: 60px 0 0 0;
-    background: url("../../../assets/images/leav_tablet.png") 100% 115% no-repeat;
+    background: url("../../assets/images/leav_tablet.png") 100% 115% no-repeat;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1000px) and (max-width: 640px) {
   .main__testimonials {
     padding: 30px 0 60px 0;
-    background: url("../../../assets/images/leav_mobile.png") 100% 106% no-repeat;
+    background: url("../../assets/images/leav_mobile.png") 100% 106% no-repeat;
   }
 }
-
-.testimonials {
+.main .testimonials {
   margin: 0 auto;
   max-width: 1162px;
   display: grid;
@@ -1280,13 +1279,13 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-areas: "title title title title" "card-one card-two card-three card-four" "indicator indicator indicator indicator" "button-feed button-feed button-feed button-feed";
 }
 @media screen and (max-width: 1600px) {
-  .testimonials {
+  .main .testimonials {
     grid-template-areas: "title title title" "card-one card-two card-three" "indicator indicator indicator" "button-feed button-feed button-feed";
     justify-items: center;
   }
 }
 @media screen and (max-width: 1000px) {
-  .testimonials {
+  .main .testimonials {
     max-width: 600px;
     grid-template-areas: "title" "card-one" "card-two" "card-three" "button-feed";
     justify-items: center;
@@ -1296,12 +1295,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (max-width: 640px) {
-  .testimonials {
+  .main .testimonials {
     max-width: 300px;
     max-height: 490px;
   }
 }
-.testimonials__title {
+.main .testimonials__title {
   grid-area: title;
   justify-self: center;
   margin: 0 0 47px 0;
@@ -1313,23 +1312,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #333B41;
 }
 @media screen and (max-width: 1600px) {
-  .testimonials__title {
+  .main .testimonials__title {
     margin: 0 0 30px 0;
   }
 }
 @media screen and (max-width: 1000px) {
-  .testimonials__title {
+  .main .testimonials__title {
     margin: 0 0 15px 0;
   }
 }
 @media screen and (max-width: 640px) {
-  .testimonials__title {
+  .main .testimonials__title {
     margin: 0 0 5px 0;
     font-size: 24px;
   }
 }
-
-.feedback-card {
+.main .feedback-card {
   padding: 13px 15px 19px 14px;
   width: 268px;
   height: 391px;
@@ -1339,7 +1337,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 @media screen and (max-width: 1600px) {
-  .feedback-card {
+  .main .feedback-card {
     padding: 13px 15px 0 14px;
     width: 293px;
     height: 391px;
@@ -1347,36 +1345,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (max-width: 1000px) {
-  .feedback-card {
+  .main .feedback-card {
     width: 600px;
     height: 110px;
   }
 }
 @media screen and (max-width: 640px) {
-  .feedback-card {
+  .main .feedback-card {
     padding: 9px 25px 19px 14px;
     width: 300px;
   }
 }
-.feedback-card:nth-child(2) {
+.main .feedback-card:nth-child(2) {
   grid-area: card-one;
 }
-.feedback-card:nth-child(3) {
+.main .feedback-card:nth-child(3) {
   grid-area: card-two;
 }
-.feedback-card:nth-child(4) {
+.main .feedback-card:nth-child(4) {
   grid-area: card-three;
 }
-.feedback-card:nth-child(5) {
+.main .feedback-card:nth-child(5) {
   grid-area: card-four;
 }
 @media screen and (max-width: 1600px) {
-  .feedback-card:nth-child(5) {
+  .main .feedback-card:nth-child(5) {
     display: none;
   }
 }
-
-.feedback__avatar {
+.main .feedback__avatar {
   width: 37px;
   height: 37px;
   border-radius: 50%;
@@ -1385,23 +1382,23 @@ h1, h2, h3, h4, h5, h6 {
   left: 14px;
 }
 @media screen and (max-width: 640px) {
-  .feedback__avatar {
+  .main .feedback__avatar {
     top: 9px;
     left: 11px;
   }
 }
-.feedback__avatar img {
+.main .feedback__avatar img {
   overflow: hidden;
 }
-.feedback__info {
+.main .feedback__info {
   margin: 0 0 10px 47px;
 }
 @media screen and (max-width: 640px) {
-  .feedback__info {
+  .main .feedback__info {
     margin: 0 0 10px 40px;
   }
 }
-.feedback__name {
+.main .feedback__name {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1410,7 +1407,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 120%;
   font-weight: 400;
 }
-.feedback__location {
+.main .feedback__location {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -1418,7 +1415,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 120%;
   color: #BDBDBD;
 }
-.feedback__date {
+.main .feedback__date {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -1428,12 +1425,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 120%;
   margin: 0 0 10px 5px;
 }
-.feedback__date::before {
+.main .feedback__date::before {
   content: "·";
   letter-spacing: 5px;
   font-weight: 1000;
 }
-.feedback__paragraph {
+.main .feedback__paragraph {
   overflow: hidden;
   width: 237px;
   height: 309px;
@@ -1445,47 +1442,45 @@ h1, h2, h3, h4, h5, h6 {
   color: #767474;
 }
 @media screen and (max-width: 1000px) {
-  .feedback__paragraph {
+  .main .feedback__paragraph {
     height: 38px;
     width: 553px;
   }
 }
 @media screen and (max-width: 640px) {
-  .feedback__paragraph {
+  .main .feedback__paragraph {
     width: 250px;
   }
 }
-
-.feedback__indicator {
+.main .feedback__indicator {
   grid-area: indicator;
   justify-self: center;
   margin: 21px 0 31px 0;
 }
 @media screen and (max-width: 1600px) {
-  .feedback__indicator {
+  .main .feedback__indicator {
     margin-top: 20px;
   }
 }
-
-.testimonials__button {
+.main .testimonials__button {
   grid-area: button-feed;
   justify-self: left;
 }
 @media screen and (max-width: 1600px) {
-  .testimonials__button {
+  .main .testimonials__button {
     margin-top: 21px;
     margin-left: 30px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .testimonials__button {
+  .main .testimonials__button {
     width: 240px;
     margin: 0 auto;
     margin-top: 23px;
   }
 }
 @media screen and (max-width: 640px) {
-  .testimonials__button {
+  .main .testimonials__button {
     margin-top: 12px;
   }
 }
