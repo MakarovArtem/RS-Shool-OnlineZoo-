@@ -140,8 +140,6 @@
 
     @media screen and (max-width: 640px) {
       max-width: none;
-      // justify-content: center;
-      // align-items: center;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, 1fr);
       row-gap: 22px;
@@ -166,7 +164,7 @@
       &::before {
         position: absolute;
         content: '';
-        background: url(/assets/icons/big-straight-arrow.png) no-repeat;
+        background: url("../icons/big-straight-arrow.png") no-repeat;
         top: 61px;
         left: -101px;
         width: 70px;
@@ -174,7 +172,7 @@
 
         @media screen and (max-width: 1000px) {
           z-index: 1;
-          background: url(/assets/icons/arrow_green.png) no-repeat;
+          background: url("../icons/arrow_green.png") no-repeat;
           top: -16px;
           left: -73px;
           width: 100%;
@@ -190,7 +188,7 @@
       &::after {
         position: absolute;
         content: '';
-        background: url(/assets/icons/big-straight-arrow.png) no-repeat;
+        background: url("../icons/big-straight-arrow.png") no-repeat;
         top: 57px;
         left: 197px;
         width: 70px;
@@ -198,7 +196,7 @@
 
         @media screen and (max-width: 1000px) {
           z-index: 1;
-          background: url(/assets/icons/arrow_green.png) no-repeat;
+          background: url("../icons/arrow_green.png") no-repeat;
           top: -17px;
           left: 135px;
           width: 100%;

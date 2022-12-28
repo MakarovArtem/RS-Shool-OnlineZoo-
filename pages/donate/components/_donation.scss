@@ -178,7 +178,7 @@
       height: 20px;
       right: 9px;
       top: calc(50% - 10px);
-      background-image: url(../../../assets/icons/dollar-icon_gray.png);
+      background-image: url("../../../assets/icons/dollar-icon_gray.png");
       background-repeat: no-repeat;
     }
 
@@ -208,7 +208,6 @@
 
   &__options {
     display: flex;
-    // justify-content: center;
     gap: 50px;
     grid-area: options;
   }
