@@ -18,10 +18,10 @@
           </div>
           <div class="menu-buttons">
             <ul class="menu-list">
-              <li class="menu-list__item menu-list__item_active"><a href="#">About</a></li>
+              <li class="menu-list__item "><a href="#">About</a></li>
               <li class="menu-list__item"><a href="#">Map</a></li>
               <li class="menu-list__item"><a href="#">Zoos</a></li>
-              <li class="menu-list__item"><a href="#">Donate</a></li>
+              <li class="menu-list__item menu-list__item_active"><a href="#">Donate</a></li>
               <li class="menu-list__item"><a href="#">Contact us</a></li>
             </ul>
           </div>
@@ -52,16 +52,27 @@
             <div class="picking__donation">
               <div class="picking__option">
                 <div class="option-bar">
-                  <p class="option-bar__name"></p>
-                  <div class="option-bar__bar"></div>
-                  <div class="option-bar__amount"></div>
+                  <p class="option-bar__name">Amount</p>
+                  <div class="option-bar__bar">
+                    <input type="range" min="1" max="8" name="donation-number" value="3" class="scroll">
+                  </div>
+                  <ul class="option-bar__amount">
+                    <li>5000</li>
+                    <li>2000</li>
+                    <li class="active">1000</li>
+                    <li>500</li>
+                    <li>250</li>
+                    <li>100</li>
+                    <li>50</li>
+                    <li>25</li>
+                  </ul>
                 </div>
               </div>
               <div class="picking__enter">
-                <form class="enter__container" action="#">
+                <form action="#">
                   <fieldset class="enter">
                     <div class="enter__field">
-                      <input class="enter__input" type="text" name="another-amount" placeholder="Another amount">
+                      <input class="enter__input" type="number" name="another-amount" placeholder="Another amount">
                     </div>
                     <div class="enter__options">
                       <div class="enter__option">
@@ -78,6 +89,7 @@
                 </form>
               </div>
             </div>
+            <p class="picking__share-call">Share with your friends on social networks</p>
           </div>
         </article>
       </div>

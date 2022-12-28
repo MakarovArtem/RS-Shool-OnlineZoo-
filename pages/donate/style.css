@@ -874,12 +874,42 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.picking__title {
+  margin-bottom: 20px;
+}
+.picking__subtitle {
+  margin-left: 90px;
+  margin-bottom: 60px;
+}
+.picking__demo {
+  display: flex;
+  justify-content: center;
+}
+.picking__option {
+  margin: 55px 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.picking__enter {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 30px 0;
+}
+.picking__share-call {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333B41;
+  text-align: center;
+}
+
 .demonstration {
   max-width: 530px;
   display: grid;
   grid-template-rows: 2fr 1fr;
   grid-template-areas: "num icon" "text icon";
-  margin: 0 auto;
   align-items: center;
   row-gap: 10px;
   -moz-column-gap: 90px;
@@ -928,9 +958,54 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: icon;
 }
 
-.enter__container {
+.option-bar {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.option-bar__name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+.option-bar__amount {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 960px;
+  height: 36px;
+}
+.option-bar__amount li {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #333B41;
+  position: relative;
+  transition: 0.5s ease;
+}
+.option-bar__amount li:before {
+  content: "";
+  background-image: url("../../../assets/icons/dollar-icon_black.png");
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  top: 7px;
+  left: -12px;
+  transition: 0.3s ease;
+}
+.option-bar__amount li.active {
+  align-self: end;
+  color: #FE9013;
+}
+.option-bar__amount li.active:before {
+  background-image: url("../../../assets/icons/dollar-icon_gold.png");
 }
 
 .enter {
@@ -955,7 +1030,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 20px;
   right: 9px;
   top: calc(50% - 10px);
-  background-image: url(../../../assets/icons/dollar-icon.png);
+  background-image: url(../../../assets/icons/dollar-icon_gray.png);
   background-repeat: no-repeat;
 }
 .enter__field input {
@@ -1012,6 +1087,52 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #4B9200;
   background-color: #4B9200;
   transition: 0.5s ease;
+}
+
+.option-bar__bar {
+  width: 980px;
+  height: 27px;
+  background: url("../../../assets/images/progress_bar.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.scroll {
+  width: 950px;
+  height: 100%;
+  margin-left: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+}
+
+.scroll::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #FE9013;
+  position: relative;
+  background-image: url("../../../assets/icons/input_circle.png");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 6px 6px;
+}
+
+.scroll::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #FE9013;
+  position: relative;
+  background-image: url("../../../assets/icons/input_circle.png");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 6px 6px;
 }
 
 .footer {

@@ -1,0 +1,45 @@
+.option-bar__bar {
+  width: 980px;
+  height: 27px;
+  background: url("../../../assets/images/progress_bar.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.scroll {
+  width: 950px;
+  height: 100%;
+  margin-left: 15px;
+  appearance: none;
+  background-color: transparent;
+}
+
+.scroll::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #FE9013;
+  position: relative;
+
+  background-image: url("../../../assets/icons/input_circle.png");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 6px 6px;
+}
+
+.scroll::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #FE9013;
+  position: relative;
+
+  background-image: url("../../../assets/icons/input_circle.png");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 6px 6px;
+}
