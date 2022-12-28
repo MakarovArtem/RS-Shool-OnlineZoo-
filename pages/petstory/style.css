@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   height: 780px;
   background-color: #111115;
-  background-image: url("../../assets/images/giant_panda.png");
+  background-image: url("/assets/images/giant_panda.png");
   background-size: cover;
 }
 @media screen and (max-width: 1600px) {
