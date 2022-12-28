@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   height: 780px;
   background-color: #111115;
-  background-image: url("../images/giant_panda.png");
+  background-image: url("../../assets/images/giant_panda.png");
   background-size: cover;
 }
 @media screen and (max-width: 1600px) {
@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 42px;
     border: 1px solid #fe9013;
     margin: 0 0 30px 0;
-    background: url("/assets/icons/bamboo-orange.svg") no-repeat 4px 15px;
+    background: url("../../assets/icons/bamboo-orange.svg") no-repeat 4px 15px;
   }
   .menu__panel.active .logo h1 {
     font-size: 15px;
@@ -571,12 +571,12 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: space-between;
   padding: 140px 0 100px;
-  background: url("../../../assets/images/flower_foto.png") 100% 1% no-repeat, url("../../../assets/images/palm_foto.png") 0 100% no-repeat, url("../../../assets/images/strelitzia.png") 100% 100% no-repeat;
+  background: url("../../assets/images/flower_foto.png") 100% 1% no-repeat, url("../../assets/images/palm_foto.png") 0 100% no-repeat, url("../../assets/images/strelitzia.png") 100% 100% no-repeat;
 }
 @media screen and (max-width: 1600px) {
   .main__backstage {
     background-image: none;
-    background: url("../../../assets/images/palm_foto_small-desktop.png") 0% 100% no-repeat, url("../../../assets/images/strelitzia_small-desktop.png") 100% 100% no-repeat;
+    background: url("../../assets/images/palm_foto_small-desktop.png") 0% 100% no-repeat, url("../../assets/images/strelitzia_small-desktop.png") 100% 100% no-repeat;
     gap: 160px;
     padding: 100px 0 140px;
   }
@@ -584,7 +584,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 1000px) {
   .main__backstage {
     background-image: none;
-    background: url("../../../assets/images/flower_foto_tablet.png") 100% 0% no-repeat, url("../../../assets/images/palm_foto_tablet.png") 0% 100% no-repeat, url("../../../assets/images/strelitzia_tablet.png") 100% 100% no-repeat;
+    background: url("../../assets/images/flower_foto_tablet.png") 100% 0% no-repeat, url("../../assets/images/palm_foto_tablet.png") 0% 100% no-repeat, url("../../assets/images/strelitzia_tablet.png") 100% 100% no-repeat;
     gap: 76px;
     align-items: center;
     padding: 60px 20px 100px;
@@ -593,7 +593,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 640px) {
   .main__backstage {
     background-image: none;
-    background: url("../../../assets/images/flower_foto_mobile.png") 100% 2% no-repeat, url("../../../assets/images/palm_foto_mobile.png") 0% 100% no-repeat, url("../../../assets/images/strelitzia_mobile.png") 100% 100.2% no-repeat;
+    background: url("../../assets/images/flower_foto_mobile.png") 100% 2% no-repeat, url("../../assets/images/palm_foto_mobile.png") 0% 100% no-repeat, url("../../assets/images/strelitzia_mobile.png") 100% 100.2% no-repeat;
     gap: 33px;
     align-items: center;
     padding: 104px 10px 60px;
