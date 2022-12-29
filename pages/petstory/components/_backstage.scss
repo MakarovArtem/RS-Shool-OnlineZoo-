@@ -4,23 +4,23 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 140px 0 100px;
-  background: url("../../assets/images/flower_foto.png") 100% 1% no-repeat,
-              url("../../assets/images/palm_foto.png") 0 100% no-repeat,
-              url("../../assets/images/strelitzia.png") 100% 100% no-repeat;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/images/flower_foto.png") 100% 1% no-repeat,
+              url("../../../RS-Shool-OnlineZoo-/assets/images/palm_foto.png") 0 100% no-repeat,
+              url("../../../RS-Shool-OnlineZoo-/assets/images/strelitzia.png") 100% 100% no-repeat;
 
   @media screen and (max-width: 1600px) {
     background-image: none;
-    background: url("../../assets/images/palm_foto_small-desktop.png") 0% 100% no-repeat,
-                url("../../assets/images/strelitzia_small-desktop.png") 100% 100% no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/images/palm_foto_small-desktop.png") 0% 100% no-repeat,
+                url("../../../RS-Shool-OnlineZoo-/assets/images/strelitzia_small-desktop.png") 100% 100% no-repeat;
     gap: 160px;
     padding: 100px 0 140px;
   }
 
   @media screen and (max-width: 1000px) {
     background-image: none;
-    background: url("../../assets/images/flower_foto_tablet.png") 100% 0% no-repeat, 
-                url("../../assets/images/palm_foto_tablet.png") 0% 100% no-repeat,
-                url("../../assets/images/strelitzia_tablet.png") 100% 100% no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/images/flower_foto_tablet.png") 100% 0% no-repeat, 
+                url("../../../RS-Shool-OnlineZoo-/assets/images/palm_foto_tablet.png") 0% 100% no-repeat,
+                url("../../../RS-Shool-OnlineZoo-/assets/images/strelitzia_tablet.png") 100% 100% no-repeat;
     gap: 76px;
     align-items: center;
     padding: 60px 20px 100px;
@@ -28,9 +28,9 @@
 
   @media screen and (max-width: 640px) {
     background-image: none;
-    background: url("../../assets/images/flower_foto_mobile.png") 100% 2% no-repeat, 
-                url("../../assets/images/palm_foto_mobile.png") 0% 100% no-repeat,
-                url("../../assets/images/strelitzia_mobile.png") 100% 100.2% no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/images/flower_foto_mobile.png") 100% 2% no-repeat, 
+                url("../../../RS-Shool-OnlineZoo-/assets/images/palm_foto_mobile.png") 0% 100% no-repeat,
+                url("../../../RS-Shool-OnlineZoo-/assets/images/strelitzia_mobile.png") 100% 100.2% no-repeat;
     gap: 33px;
     align-items: center;
     padding: 104px 10px 60px;

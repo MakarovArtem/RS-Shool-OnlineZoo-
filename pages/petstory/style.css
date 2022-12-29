@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 42px;
     border: 1px solid #fe9013;
     margin: 0 0 30px 0;
-    background: url("../../assets/icons/bamboo-orange.svg") no-repeat 4px 15px;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/icons/bamboo-orange.svg") no-repeat 4px 15px;
   }
   .menu__panel.active .logo h1 {
     font-size: 15px;
@@ -571,12 +571,12 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: space-between;
   padding: 140px 0 100px;
-  background: url("../../assets/images/flower_foto.png") 100% 1% no-repeat, url("../../assets/images/palm_foto.png") 0 100% no-repeat, url("../../assets/images/strelitzia.png") 100% 100% no-repeat;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/images/flower_foto.png") 100% 1% no-repeat, url("../../../RS-Shool-OnlineZoo-/assets/images/palm_foto.png") 0 100% no-repeat, url("../../../RS-Shool-OnlineZoo-/assets/images/strelitzia.png") 100% 100% no-repeat;
 }
 @media screen and (max-width: 1600px) {
   .main__backstage {
     background-image: none;
-    background: url("../../assets/images/palm_foto_small-desktop.png") 0% 100% no-repeat, url("../../assets/images/strelitzia_small-desktop.png") 100% 100% no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/images/palm_foto_small-desktop.png") 0% 100% no-repeat, url("../../../RS-Shool-OnlineZoo-/assets/images/strelitzia_small-desktop.png") 100% 100% no-repeat;
     gap: 160px;
     padding: 100px 0 140px;
   }
@@ -584,7 +584,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 1000px) {
   .main__backstage {
     background-image: none;
-    background: url("../../assets/images/flower_foto_tablet.png") 100% 0% no-repeat, url("../../assets/images/palm_foto_tablet.png") 0% 100% no-repeat, url("../../assets/images/strelitzia_tablet.png") 100% 100% no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/images/flower_foto_tablet.png") 100% 0% no-repeat, url("../../../RS-Shool-OnlineZoo-/assets/images/palm_foto_tablet.png") 0% 100% no-repeat, url("../../../RS-Shool-OnlineZoo-/assets/images/strelitzia_tablet.png") 100% 100% no-repeat;
     gap: 76px;
     align-items: center;
     padding: 60px 20px 100px;
@@ -593,7 +593,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 640px) {
   .main__backstage {
     background-image: none;
-    background: url("../../assets/images/flower_foto_mobile.png") 100% 2% no-repeat, url("../../assets/images/palm_foto_mobile.png") 0% 100% no-repeat, url("../../assets/images/strelitzia_mobile.png") 100% 100.2% no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/images/flower_foto_mobile.png") 100% 2% no-repeat, url("../../../RS-Shool-OnlineZoo-/assets/images/palm_foto_mobile.png") 0% 100% no-repeat, url("../../../RS-Shool-OnlineZoo-/assets/images/strelitzia_mobile.png") 100% 100.2% no-repeat;
     gap: 33px;
     align-items: center;
     padding: 104px 10px 60px;
@@ -1133,7 +1133,7 @@ h1, h2, h3, h4, h5, h6 {
 .donation__cards .donation-card:nth-child(2)::before {
   position: absolute;
   content: "";
-  background: url("../icons/big-straight-arrow.png") no-repeat;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/big-straight-arrow.png") no-repeat;
   top: 61px;
   left: -101px;
   width: 70px;
@@ -1142,7 +1142,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 1000px) {
   .donation__cards .donation-card:nth-child(2)::before {
     z-index: 1;
-    background: url("../icons/arrow_green.png") no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/icons/arrow_green.png") no-repeat;
     top: -16px;
     left: -73px;
     width: 100%;
@@ -1158,7 +1158,7 @@ h1, h2, h3, h4, h5, h6 {
 .donation__cards .donation-card:nth-child(2)::after {
   position: absolute;
   content: "";
-  background: url("../icons/big-straight-arrow.png") no-repeat;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/big-straight-arrow.png") no-repeat;
   top: 57px;
   left: 197px;
   width: 70px;
@@ -1167,7 +1167,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 1000px) {
   .donation__cards .donation-card:nth-child(2)::after {
     z-index: 1;
-    background: url("../icons/arrow_green.png") no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/icons/arrow_green.png") no-repeat;
     top: -17px;
     left: 135px;
     width: 100%;
@@ -1250,24 +1250,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .main__testimonials {
   padding: 140px 0 180px 0;
-  background: url("../../assets/images/leav.png") 100% 126% no-repeat;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/images/leav.png") 100% 126% no-repeat;
 }
 @media screen and (max-width: 1600px) {
   .main__testimonials {
     padding: 100px 0 140px 0;
-    background: url("../../assets/images/leav_small-desktop.png") 100% 116% no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/images/leav_small-desktop.png") 100% 116% no-repeat;
   }
 }
 @media screen and (max-width: 1000px) {
   .main__testimonials {
     padding: 60px 0 0 0;
-    background: url("../../assets/images/leav_tablet.png") 100% 115% no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/images/leav_tablet.png") 100% 115% no-repeat;
   }
 }
 @media screen and (max-width: 1000px) and (max-width: 640px) {
   .main__testimonials {
     padding: 30px 0 60px 0;
-    background: url("../../assets/images/leav_mobile.png") 100% 106% no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/images/leav_mobile.png") 100% 106% no-repeat;
   }
 }
 .main .testimonials {
@@ -1771,7 +1771,7 @@ input[type=range]::-moz-range-thumb {
 .social_facebook .social__icon {
   position: absolute;
   top: -3px;
-  background: url("../icons/facebook-icon.svg") no-repeat 9px 5px;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/facebook-icon.svg") no-repeat 9px 5px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 @media screen and (max-width: 1000px) {
@@ -1782,19 +1782,19 @@ input[type=range]::-moz-range-thumb {
 .social_twitter .social__icon {
   position: absolute;
   top: -3px;
-  background: url("../icons/twitter-icon.svg") no-repeat 6px 5px;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/twitter-icon.svg") no-repeat 6px 5px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 .social_instagram .social__icon {
   position: absolute;
   top: -3px;
-  background: url("./icons/instagram-icon.svg") no-repeat 5px 5px;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/instagram-icon.svg") no-repeat 5px 5px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 .social_youtube .social__icon {
   position: absolute;
   top: -3px;
-  background: url("../icons/youtube-icon.svg") no-repeat 4px 6px;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/youtube-icon.svg") no-repeat 4px 6px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 .social__icon {

@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 42px;
     border: 1px solid #fe9013;
     margin: 0 0 30px 0;
-    background: url("../../assets/icons/bamboo-orange.svg") no-repeat 4px 15px;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/icons/bamboo-orange.svg") no-repeat 4px 15px;
   }
   .menu__panel.active .logo h1 {
     font-size: 15px;
@@ -759,7 +759,7 @@ h1, h2, h3, h4, h5, h6 {
 .donation__cards .donation-card:nth-child(2)::before {
   position: absolute;
   content: "";
-  background: url("../icons/big-straight-arrow.png") no-repeat;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/big-straight-arrow.png") no-repeat;
   top: 61px;
   left: -101px;
   width: 70px;
@@ -768,7 +768,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 1000px) {
   .donation__cards .donation-card:nth-child(2)::before {
     z-index: 1;
-    background: url("../icons/arrow_green.png") no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/icons/arrow_green.png") no-repeat;
     top: -16px;
     left: -73px;
     width: 100%;
@@ -784,7 +784,7 @@ h1, h2, h3, h4, h5, h6 {
 .donation__cards .donation-card:nth-child(2)::after {
   position: absolute;
   content: "";
-  background: url("../icons/big-straight-arrow.png") no-repeat;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/big-straight-arrow.png") no-repeat;
   top: 57px;
   left: 197px;
   width: 70px;
@@ -793,7 +793,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 1000px) {
   .donation__cards .donation-card:nth-child(2)::after {
     z-index: 1;
-    background: url("../icons/arrow_green.png") no-repeat;
+    background: url("../../../RS-Shool-OnlineZoo-/assets/icons/arrow_green.png") no-repeat;
     top: -17px;
     left: 135px;
     width: 100%;
@@ -938,7 +938,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 50%;
   left: 105%;
-  background: url("../../../../assets/icons/x_icon.png") no-repeat;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/x_icon.png") no-repeat;
 }
 .demonstration__text {
   font-family: "Roboto";
@@ -992,7 +992,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .option-bar__amount li:before {
   content: "";
-  background-image: url("../../../assets/icons/dollar-icon_black.png");
+  background-image: url("../../../RS-Shool-OnlineZoo-/assets/icons/dollar-icon_black.png");
   position: absolute;
   width: 10px;
   height: 20px;
@@ -1005,7 +1005,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FE9013;
 }
 .option-bar__amount li.active:before {
-  background-image: url("../../../assets/icons/dollar-icon_gold.png");
+  background-image: url("../../../RS-Shool-OnlineZoo-/assets/icons/dollar-icon_gold.png");
 }
 
 .enter {
@@ -1030,7 +1030,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 20px;
   right: 9px;
   top: calc(50% - 10px);
-  background-image: url("../../../assets/icons/dollar-icon_gray.png");
+  background-image: url("../../../RS-Shool-OnlineZoo-/assets/icons/dollar-icon_gray.png");
   background-repeat: no-repeat;
 }
 .enter__field input {
@@ -1092,7 +1092,7 @@ h1, h2, h3, h4, h5, h6 {
 .option-bar__bar {
   width: 980px;
   height: 27px;
-  background: url("../../../assets/images/progress_bar.png") no-repeat;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/images/progress_bar.png") no-repeat;
   background-size: 100% 100%;
   position: relative;
 }
@@ -1115,7 +1115,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   border: 2px solid #FE9013;
   position: relative;
-  background-image: url("../../../assets/icons/input_circle.png");
+  background-image: url("../../../RS-Shool-OnlineZoo-/assets/icons/input_circle.png");
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: 6px 6px;
@@ -1129,7 +1129,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   border: 2px solid #FE9013;
   position: relative;
-  background-image: url("../../../assets/icons/input_circle.png");
+  background-image: url("../../../RS-Shool-OnlineZoo-/assets/icons/input_circle.png");
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: 6px 6px;
@@ -1359,7 +1359,7 @@ h1, h2, h3, h4, h5, h6 {
 .social_facebook .social__icon {
   position: absolute;
   top: -3px;
-  background: url("../icons/facebook-icon.svg") no-repeat 9px 5px;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/facebook-icon.svg") no-repeat 9px 5px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 @media screen and (max-width: 1000px) {
@@ -1370,19 +1370,19 @@ h1, h2, h3, h4, h5, h6 {
 .social_twitter .social__icon {
   position: absolute;
   top: -3px;
-  background: url("../icons/twitter-icon.svg") no-repeat 6px 5px;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/twitter-icon.svg") no-repeat 6px 5px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 .social_instagram .social__icon {
   position: absolute;
   top: -3px;
-  background: url("./icons/instagram-icon.svg") no-repeat 5px 5px;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/instagram-icon.svg") no-repeat 5px 5px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 .social_youtube .social__icon {
   position: absolute;
   top: -3px;
-  background: url("../icons/youtube-icon.svg") no-repeat 4px 6px;
+  background: url("../../../RS-Shool-OnlineZoo-/assets/icons/youtube-icon.svg") no-repeat 4px 6px;
   background-color: rgba(196, 196, 196, 0.5);
 }
 .social__icon {
